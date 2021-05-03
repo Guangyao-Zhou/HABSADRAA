@@ -3,6 +3,7 @@ The code for A Hybrid Solution for Aspect-Based Sentiment Analysis using Double 
 ## Software
 The HABSADRAA source code: https://github.com/ofwallaart/HAABSA and https://github.com/mtrusca/HAABSA_PLUS_PLUS need to be installed. Then, 
 -Update the config.py, main.py.
+
 -Add files:
  - Double rotatory attention Adjustment model with Type 1:
    - lcrDoubleRAAtype1
