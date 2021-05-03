@@ -6,7 +6,7 @@ The HABSADRAA source code: https://github.com/ofwallaart/HAABSA and https://gith
 
 -Add files:
  - Double rotatory attention Adjustment model with Type 1:
-   - lcrDoubleRAAtype1
+   - lcrDoubleRAA
  - Double rotatory attention Adjustment model with Type 2:
    - lcrDoubleRAAtype2
 
