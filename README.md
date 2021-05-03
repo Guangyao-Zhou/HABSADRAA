@@ -8,6 +8,7 @@ The HABSADRAA source code: https://github.com/ofwallaart/HAABSA and https://gith
    - lcrDoubleRAAtype1
  - Double rotatory attention Adjustment model with Type 2:
    - lcrDoubleRAAtype2
+
 The training and testing databases are SemEval 2015 and SemEval 2016. The files are available for BERT word emebddings.
 ## Word embeddings
  - BERT word embeddings (SemEval 2015): https://drive.google.com/file/d/1-P1LjDfwPhlt3UZhFIcdLQyEHFuorokx/view?usp=sharing
