@@ -11,8 +11,7 @@ import svmModel
 from OntologyReasoner import OntReasoner
 from loadData import *
 import lcrDoubleRAA
-import lcrinvmodel2
-import lcrnewmodel2
+import lcrDoubleRAAtype2
 #import parameter configuration and data paths
 from config import *
 #import modules
@@ -30,7 +29,7 @@ def main(_):
     runSVM = False
     runlcrDoubleRAA = True
     runINVMULTIHOP1 = False
-    runLCRNEWMODEL2 = False
+    runlcrDoubleRAAtype2 = False
     weightanalysis = False
     
     #determine if backupmethod is used
@@ -87,8 +86,8 @@ def main(_):
        _, pred2, fw2, bw2, tl2, tr2 = lcrinvmodel2.main(FLAGS.train_path,test, accuracyOnt, test_size, remaining_size)
        tf.reset_default_graph()
     
-    if runLCRNEWMODEL2 == True:
-        _, pred2, fw2, bw2, tl2, tr2 = lcrnewmodel2.main(FLAGS.train_path,test, accuracyOnt, test_size, remaining_size)
+    if runlcrDoubleRAAtype2 == True:
+        _, pred2, fw2, bw2, tl2, tr2 = lcrDoubleRAAtype2.main(FLAGS.train_path,test, accuracyOnt, test_size, remaining_size)
         tf.reset_default_graph()
     
     # BoW model
