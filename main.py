@@ -94,62 +94,7 @@ def main(_):
     # BoW model
     if runSVM == True:
         svmModel.main(FLAGS.train_svm_path,test, accuracyOnt, test_size, remaining_size)
-    # CABASC model
-    if runCABASC == True:
-        _, pred3, weights = cabascModel.main(FLAGS.train_path,test, accuracyOnt, test_size, remaining_size)
-        if weightanalysis and runLCRROT and runLCRROTALT:
-            outF= open('sentence_analysis.txt', "w")
-            dif = np.subtract(pred3, pred1)
-            for i, value in enumerate(pred3):
-                if value == 1 and pred2[i] == 0:
-                    sentleft, sentright = [], []
-                    flag = True
-                    for word in sent[i]:
-                        if word == '$t$':
-                            flag = False
-                            continue
-                        if flag:
-                            sentleft.append(word)
-                        else:
-                            sentright.append(word)
-                    print(i)
-                    outF.write(str(i))
-                    outF.write("\n")
-                    outF.write('lcr pred: {}; CABASC pred: {}; lcralt pred: {}; true: {}'.format(pred1[i], pred3[i], pred2[i], true[i]))
-                    outF.write("\n")
-                    outF.write(";".join(sentleft))
-                    outF.write("\n")
-                    outF.write(";".join(str(x) for x in fw1[i][0]))
-                    outF.write("\n")
-                    outF.write(";".join(sentright))
-                    outF.write("\n")
-                    outF.write(";".join(str(x) for x in bw1[i][0]))
-                    outF.write("\n")
-                    outF.write(";".join(target[i]))
-                    outF.write("\n")
-                    outF.write(";".join(str(x) for x in tl1[i][0]))
-                    outF.write("\n")
-                    outF.write(";".join(str(x) for x in tr1[i][0]))
-                    outF.write("\n")
-                    outF.write(";".join(sentleft))
-                    outF.write("\n")
-                    outF.write(";".join(str(x) for x in fw2[i][0]))
-                    outF.write("\n")
-                    outF.write(";".join(sentright))
-                    outF.write("\n")
-                    outF.write(";".join(str(x) for x in bw2[i][0]))
-                    outF.write("\n")
-                    outF.write(";".join(target[i]))
-                    outF.write("\n")
-                    outF.write(";".join(str(x) for x in tl2[i][0]))
-                    outF.write("\n")
-                    outF.write(";".join(str(x) for x in tr2[i][0]))
-                    outF.write("\n")
-                    outF.write(";".join(sent[i]))
-                    outF.write("\n")
-                    outF.write(";".join(str(x) for x in weights[i][0]))
-                    outF.write("\n")
-            outF.close()
+   
     print('Finished program succesfully')
 
 if __name__ == '__main__':
