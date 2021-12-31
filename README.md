@@ -1,5 +1,5 @@
 # HABSADRA
-The passage for A Hybrid Solution for Aspect-Based Sentiment Analysis using Double Rotatory Attention model
+We introduce a new model named "A Hybrid Solution for Aspect-Based Sentiment Analysis using Double Rotatory Attention model" and provide a code sample.
 ## Software
 The HABSADRAA source code: https://github.com/ofwallaart/HAABSA and https://github.com/mtrusca/HAABSA_PLUS_PLUS need to be installed. Then, 
 -Update the config.py, main.py.
