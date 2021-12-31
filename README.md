@@ -1,4 +1,4 @@
-# HABSADRAA
+# HABSADRA
 The code for A Hybrid Solution for Aspect-Based Sentiment Analysis using Double Rotatory Attention model
 ## Software
 The HABSADRAA source code: https://github.com/ofwallaart/HAABSA and https://github.com/mtrusca/HAABSA_PLUS_PLUS need to be installed. Then, 
