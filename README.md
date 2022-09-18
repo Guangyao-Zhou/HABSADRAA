@@ -1,5 +1,5 @@
 # HABSADRA
-We introduce a new model named "A Hybrid Solution for Aspect-Based Sentiment Analysis using Double Rotatory Attention model" and provide a code sample.
+We introduce a new model named "A Hybrid Solution for Aspect-Based Sentiment Analysis using Double Rotatory Attention model, which is capable of extracting these opinions and predicting the sentiment scores in aspect-level sentiment mining. In our two-step approach, a lexicalised domain ontology is firstly applied for sentiment classification. If the result is inconclusive from the first step, the backup model double rotatory attention mechanism is applied, which utilises deep contextual word embeddings to better capture the (multi-)word semantics in the given text. This study contributes to the current research by introducing novel repetition and rotatory structures to refine the attention mechanism. It is shown that our model outperforms state-of-the-art methods on the datasets of SemEval 2015 and SemEval 2016.
 ## Software
 The HABSADRAA source code: https://github.com/ofwallaart/HAABSA and https://github.com/mtrusca/HAABSA_PLUS_PLUS need to be installed. Then, 
 -Update the config.py, main.py.
